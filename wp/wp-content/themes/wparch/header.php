@@ -66,15 +66,9 @@
   <meta property="og:image:secure_url" content=""/>
   <meta property="og:url" content="arel.ir"/>
 
-  <link href="https://www.arel.ir/templates/arel2016/MRMcss/bootstrap.min.css" rel="stylesheet">
-
-  <link rel='stylesheet' href='https://www.arel.ir/templates/arel2016/MRMcss/MRMengine.css' type='text/css' />
-  <link rel='stylesheet' href='https://www.arel.ir/templates/arel2016/MRMcss/main.css' type='text/css'/>
-
-
 <!-- costum -->
-  <meta name="samandehi" content="318348248"/>
-  <link rel="alternate" href="https://www.arel.ir" hreflang="fa-ir" />
+  <!-- <meta name="samandehi" content=" "/> -->
+  <!-- <link rel="alternate" href=" " hreflang="fa-ir" /> -->
 
   <?php wp_head(); ?>
 </head>
