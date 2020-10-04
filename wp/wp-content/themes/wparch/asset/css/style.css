@@ -4,16 +4,16 @@
 
 /** main */
 @font-face {
-	font-family: 'akoyekan';
+	font-family: 'syekan';
 	src: url('../fonts/Yekan.eot');
 	src: url('../fonts/Yekan.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-        font-display: swap;
+  font-display: swap;
  unicode-range: U+0600Ć¢ā‚¬ā€06FF;
 }
 body {
-	font-family: "akoyekan", tahoma;
+	font-family: "syekan", tahoma;
 	font-size: 1.5em;
 }
 
