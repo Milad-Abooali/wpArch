@@ -82,7 +82,7 @@
   <meta property="og:locale" content="fa_IR">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
-  <meta property="og:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : IMG.'og.jpg'; ?>">
+  <meta property="og:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : CB_IMG.'og.jpg'; ?>">
   <meta property="og:description" content="<?= $PAGE['description']; ?>">
   <meta property="og:url" content="<?= site_url() ?>">
   <meta property="og:title" content="<?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?>">
@@ -91,7 +91,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="<?= $CB_Publisher['twitter'] ?>">
   <meta name="twitter:creator" content="<?= $CB_Publisher['twitter'] ?>">
-  <meta name="twitter:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : IMG.'og.jpg'; ?>">
+  <meta name="twitter:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : CB_IMG.'og.jpg'; ?>">
   <meta name="twitter:description" content="<?= $PAGE['description']; ?>">
   <meta name="twitter:title" content="<?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?>">
 <!-- Custom -->
