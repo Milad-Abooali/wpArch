@@ -21,7 +21,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-  <base href='https://www.arel.ir/' />
+  <base href='https://www.arel.ir/'>
 
 <!-- favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="<?= CB_IMG ?>/icon/apple-icon-57x57.png">
@@ -44,31 +44,31 @@
 
 <!-- page info -->
   <title><?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?></title>
-  <meta name="description" content="">
-  <link rel="canonical" href="" />
-  <meta name='robots' content='index, follow' />
+  <meta name="description" content=" ">
+  <link rel="canonical" href=" ">
+  <meta name='robots' content='index, follow'>
 
 <!-- metadata -->
-  <meta name="DC.Date.Created" content=""/>
-  <meta name="DC.Type" content="article"/>
-  <meta name="DC.Title" content=" معماری، دکوراسیون داخلی ، طراحی داخلی آرل "/>
-  <meta name="DC.Description" content=""/>
-  <meta name="DC.Language" content="fa"/>
-  <meta name="DC.Publisher" content=" آرل "/>
+  <meta name="DC.Date.Created" content=" ">
+  <meta name="DC.Type" content="article">
+  <meta name="DC.Title" content=" ">
+  <meta name="DC.Description" content=" ">
+  <meta name="DC.Language" content="fa">
+  <meta name="DC.Publisher" content=" ">
 
 <!-- og:data -->
-  <meta property="og:site_name" content=" آرل ">
-  <meta property="og:title" content="معماری، دکوراسیون داخلی ، طراحی داخلی آرل"/>
-  <meta property="og:description" content="" />
-  <meta property="og:type" content="article"/>
-  <meta property="og:image" content=""/>
+  <meta property="og:site_name" content=" ">
+  <meta property="og:title" content=" ">
+  <meta property="og:description" content=" ">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content=" ">
   <meta property="og:image:type" content="image/jpg">
-  <meta property="og:image:secure_url" content=""/>
-  <meta property="og:url" content="arel.ir"/>
+  <meta property="og:image:secure_url" content=" ">
+  <meta property="og:url" content=" ">
 
 <!-- costum -->
-  <!-- <meta name="samandehi" content=" "/> -->
-  <!-- <link rel="alternate" href=" " hreflang="fa-ir" /> -->
+  <!-- <meta name="samandehi" content=" "> -->
+  <!-- <link rel="alternate" href=" " hreflang="fa-ir"> -->
 
   <?php wp_head(); ?>
 </head>

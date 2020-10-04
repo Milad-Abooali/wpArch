@@ -18,7 +18,6 @@ body {
 }
 
 
-/*** Edite By Fallah ***/
 
 @media only screen and (max-width: 600px) {
  .navbar-fixed-top {
@@ -84,7 +83,6 @@ font-size:14px;
 	background-color: #000
 }
 
-/*** End Edite By Fallah ***/
 
 /*** header ***/
 
@@ -187,7 +185,7 @@ font-size:14px;
 }
 
 
-/*   ŲØŲ±Ų§Ū ŲµŁŲ­Ł‡ Ł¾Ų±ŁŚŁ‡ Ł‡Ų§Ū Ų·Ų±Ų§Ų­Ū ŲÆŲ§Ų®Ł„Ū  */
+/* EC */
 .interior{
     background-color: #d1d3d4;
 }
@@ -203,7 +201,7 @@ font-size:14px;
       opacity: 1;
       }
 
-/*   ŲØŲ±Ų§Ū Ł†ŲŖŲ§ŪŲ¬ Ų¬Ų³ŲŖŲ¬Ł ŚÆŁŚÆŁ„  */
+/* EC */
 .searchgoogle{
 
 
@@ -212,7 +210,7 @@ font-size:14px;
         font-family: Geneva;
 
 }
-/*   Ł…Ł†Ł Ų¹Ł…ŁŲÆŪ ŲØŲ§Ų²Ų´Ł  */
+/* EC */
 
 .ac-container label:hover{
 	background: #fff;
@@ -335,7 +333,7 @@ margin-top: 10px;
     margin-bottom: 5px;
 }
 
-/* Ł†ŁŲ´ŲŖŁ‡ Ų§Ų³Ł„Ų§ŪŲÆ Ų´Ł */
+/* EC */
 .carousel-caption p {
     margin: 0 0 10px;
     background-color: rgba(2,1,1,0.8);
@@ -343,7 +341,7 @@ margin-top: 10px;
     direction: rtl;
 }
 
-/* Ų§Ł†ŲÆŲ§Ų²Ł‡ Ų¹Ś©Ų³  Ł‡Ų§Ū Ł…Ų·Ų§Ł„ŲØ */
+/* Ec */
 
 .newscontentprint
 {
@@ -445,7 +443,7 @@ margin-bottom: 32px;
  width:100%;
 }
 
-/* ŲµŁŲ­Ų§ŲŖ Ł¾Ų±ŁŚŁ‡ Ł‡Ų§ */
+/* Ec */
 .interior2016 {
      margin:0px;
      padding: 2px;
@@ -1045,14 +1043,3 @@ input {
 
 /*  Serch page   */
 .search-size {height: 200px;}
-
-
-
-/*  Mobile menu /*** Edite By Fallah ***/  */
-
-
-
-
-
-
-/*  Mobile menu   */
