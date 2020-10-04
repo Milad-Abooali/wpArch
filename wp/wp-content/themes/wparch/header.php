@@ -9,6 +9,7 @@
  * @package wpArch
  */
 
+    define('CB_CDN','https://cdn.codebox.ir');
     define('CB_IMG',get_template_directory_uri().'/asset/img/');
     define('CB_JS',get_template_directory_uri().'/asset/js/');
     define('CB_CSS',get_template_directory_uri().'/asset/css/');
@@ -17,11 +18,24 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-  <base href='https://www.arel.ir/'>
+
+<!-- Main Meta -->
+  <base href='<?= site_url() ?>/'>
+  <link rel="author" href="<?= site_url() ?>humans.txt" />
+  <meta name="generator" content="wordpress" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<!--- Codebox Data -->
+  <meta name="cb-url" content="<?= site_url() ?>" />
+  <meta name="cb-cdn" content="<?= CB_CDN ?>" />
+  <meta name="cb-css" content="<?= CB_CSS ?>" />
+  <meta name="cb-img" content="<?= CB_IMG ?>" />
+  <meta name="cb-js" content="<?= CB_JS ?>" />
+<!--- Prefetch -->
+  <link rel='dns-prefetch' href="<?= CB_CDN ?>" />
+
+
 
 <!-- favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="<?= CB_IMG ?>/icon/apple-icon-57x57.png">
