@@ -12,15 +12,15 @@ include_once TEMPLATEPATH.'/inc/metabox.php';
 // include css to help style our custom meta boxes
 if (is_admin()) wp_enqueue_style('custom_meta_css',TEMPLATEPATH . '/custom/meta.css');
 
-$custom_metabox = new WPAlchemy_MetaBox(array(
-  'id' => '_custom_meta', // underscore prefix hides fields from the custom fields area
-  'title' => 'My Custom Meta',
-  'template' => TEMPLATEPATH . '/inc/metaboxes/full.php'
-));
-// add a second custom meta box
+$custom_metabox =
 new WPAlchemy_MetaBox(array(
-  'id' => '_custom_meta2',
-  'title' => 'My Custom Meta #2',
+  'id' => '_cb_seo',
+  'title' => 'Codebox SEO',
+  'template' => TEMPLATEPATH . '/inc/metaboxes/cb-seo.php'
+));
+new WPAlchemy_MetaBox(array(
+  'id' => '_custom_meta',
+  'title' => 'Full',
   'types' => array('page','events'), // added only for pages and to custom post type "events"
   'context' => 'normal', // same as above, defaults to "normal"
   'priority' => 'high', // same as above, defaults to "high"
