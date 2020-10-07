@@ -9,12 +9,12 @@
  * @package wpArch
  */
 
-    define('CB_Canonical','https://cdn.codebox.ir');
+    define('CB_Canonical','');
 
     define('CB_CDN','https://cdn.codebox.ir');
-    define('CB_IMG',get_template_directory_uri().'/asset/img/');
-    define('CB_JS',get_template_directory_uri().'/asset/js/');
-    define('CB_CSS',get_template_directory_uri().'/asset/css/');
+    define('CB_IMG',get_template_directory_uri().'/asset/img');
+    define('CB_JS',get_template_directory_uri().'/asset/js');
+    define('CB_CSS',get_template_directory_uri().'/asset/css');
 
 ?>
 <!doctype html>
@@ -22,7 +22,7 @@
 <head>
 <!-- Main Meta -->
   <base href='<?= site_url() ?>/'>
-  <link rel="author" href="<?= site_url() ?>humans.txt">
+  <link rel="author" href="<?= site_url() ?>/humans.txt">
   <meta name="generator" content="wordpress">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -69,7 +69,6 @@
 <!-- page info -->
   <title><?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?></title>
   <meta name="description" content=" ">
-  <link rel="canonical" href=" ">
   <meta name='robots' content='index, follow'>
 <!-- Meta Data -->
   <meta name="DC.Date.Created" content=" ">
@@ -82,7 +81,7 @@
   <meta property="og:locale" content="fa_IR">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
-  <meta property="og:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : CB_IMG.'og.jpg'; ?>">
+  <meta property="og:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : CB_IMG.'/og.jpg'; ?>">
   <meta property="og:description" content="<?= $PAGE['description']; ?>">
   <meta property="og:url" content="<?= site_url() ?>">
   <meta property="og:title" content="<?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?>">
@@ -91,7 +90,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="<?= $CB_Publisher['twitter'] ?>">
   <meta name="twitter:creator" content="<?= $CB_Publisher['twitter'] ?>">
-  <meta name="twitter:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : CB_IMG.'og.jpg'; ?>">
+  <meta name="twitter:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : CB_IMG.'/twitter.jpg'; ?>">
   <meta name="twitter:description" content="<?= $PAGE['description']; ?>">
   <meta name="twitter:title" content="<?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?>">
 <!-- Custom -->
@@ -99,3 +98,9 @@
 <!-- Wordpress -->
   <?php wp_head(); ?>
 </head>
+<?php
+  $meta = get_post_meta( get_the_ID(), 'NAME' );
+  if( !empty($meta) ) {
+    echo $meta[0];
+  }
+?>
