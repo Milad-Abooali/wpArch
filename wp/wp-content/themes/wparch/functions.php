@@ -1,6 +1,34 @@
 <?php
 
 /*
+* Costum Fields
+**/
+add_filter( 'postmeta_form_limit', 'meta_limit_increase' );
+function meta_limit_increase( $limit ) {
+    return 50;
+}
+
+include_once TEMPLATEPATH.'/inc/metabox.php';
+// include css to help style our custom meta boxes
+if (is_admin()) wp_enqueue_style('custom_meta_css',TEMPLATEPATH . '/custom/meta.css');
+
+$custom_metabox = new WPAlchemy_MetaBox(array(
+  'id' => '_custom_meta', // underscore prefix hides fields from the custom fields area
+  'title' => 'My Custom Meta',
+  'template' => TEMPLATEPATH . '/inc/metaboxes/full.php'
+));
+// add a second custom meta box
+new WPAlchemy_MetaBox(array(
+  'id' => '_custom_meta2',
+  'title' => 'My Custom Meta #2',
+  'types' => array('page','events'), // added only for pages and to custom post type "events"
+  'context' => 'normal', // same as above, defaults to "normal"
+  'priority' => 'high', // same as above, defaults to "high"
+  'template' => TEMPLATEPATH . '/inc/metaboxes/full.php'
+));
+
+
+/*
 * Enqueues
 **/
 function all_enqueue() {

@@ -99,8 +99,6 @@
   <?php wp_head(); ?>
 </head>
 <?php
-  $meta = get_post_meta( get_the_ID(), 'NAME' );
-  if( !empty($meta) ) {
-    echo $meta[0];
-  }
+  $meta = get_post_meta(get_the_ID(), 'NAME', true);
+  echo ($meta) ? $meta : bloginfo('description');
 ?>
