@@ -12,7 +12,6 @@
  **/
 define('CB_Description', (get_post_meta(get_the_ID(), '_cb_seo', true)['CB_Description']) ?? get_the_excerpt());
 
-
 get_header();
 ?>
 

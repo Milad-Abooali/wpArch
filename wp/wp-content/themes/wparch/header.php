@@ -15,6 +15,10 @@
    define('CB_Title', wp_title(' ~ ',false,'right').get_bloginfo('name'));
    define('CB_Canonical', get_permalink());
 
+   $CB_Thumbnail_Full = if (has_post_thumbnail()) the_post_thumbnail( 'full' );
+   $CB_Thumbnail_Medium = if (has_post_thumbnail()) the_post_thumbnail( 'medium' );
+   $CB_Thumbnail_Thumbnail = if (has_post_thumbnail()) the_post_thumbnail( 'thumbnail' );
+
    $CB_Publisher = array(
      'DC'  =>  '',
      'og'  =>  '',
