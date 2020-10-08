@@ -106,4 +106,4 @@
 
 <!-- Wordpress -->
   <?php wp_head(); ?>
-</head>
+</head><?php include_once TEMPLATEPATH.'/inc/metabox.php'; ?>
