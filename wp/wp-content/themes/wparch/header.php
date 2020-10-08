@@ -9,12 +9,17 @@
  * @package wpArch
  */
 
-    define('CB_Canonical','');
+ /*
+ * Codebox SEO
+ **/
+   define('CB_Title', wp_title(' ~ ',false,'right').get_bloginfo('name'));
+   define('CB_Canonical', get_permalink());
 
-    define('CB_CDN','https://cdn.codebox.ir');
-    define('CB_IMG',get_template_directory_uri().'/asset/img');
-    define('CB_JS',get_template_directory_uri().'/asset/js');
-    define('CB_CSS',get_template_directory_uri().'/asset/css');
+   $CB_Publisher = array(
+     'DC'  =>  '',
+     'og'  =>  '',
+     'twitter'  =>  '',
+   );
 
 ?>
 <!doctype html>
@@ -36,9 +41,9 @@
 <!--- Prefetch -->
   <link rel='dns-prefetch' href="<?= CB_CDN ?>">
 <!--- Verification -->
-  <meta name="yandex-verification" content=" ">
-  <meta name="p:domain_verify" content=" ">
-  <meta name="samandehi" content=" ">
+  <!-- <meta name="yandex-verification" content=" "> -->
+  <!-- <meta name="p:domain_verify" content=" "> -->
+  <!-- <meta name="samandehi" content=" "> -->
 <!-- Alternative -->
   <?php if (CB_Canonical): ?><link rel="canonical" href="<?= CB_Canonical ?>"><?php endif; ?>
   <link rel="alternate" type="application/rss+xml" title="Posts RDF/RSS 1.0 Feed" href=" <?php bloginfo( 'rdf_url' ); ?>" />
@@ -67,14 +72,14 @@
   <meta name="msapplication-TileImage" content="<?= CB_IMG ?>/icon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 <!-- page info -->
-  <title><?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?></title>
-  <meta name="description" content=" ">
+  <title><?= CB_Title ?></title>
+  <meta name="description" content="<?= CB_Description ?>">
   <meta name='robots' content='index, follow'>
 <!-- Meta Data -->
-  <meta name="DC.Date.Created" content=" ">
-  <meta name="DC.Type" content="article">
-  <meta name="DC.Title" content="<?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?>">
-  <meta name="DC.Description" content=" ">
+  <meta name="DC.Date.Created" content="<?= get_the_date('c'); ?>">
+  <meta name="DC.Type" content="text">
+  <meta name="DC.Title" content="<?= CB_Title ?>">
+  <meta name="DC.Description" content="<?= CB_Description ?>">
   <meta name="DC.Language" content="fa_IR">
   <meta name="DC.Publisher" content="<?= $CB_Publisher['DC'] ?>">
 <!--- Open Graph -->
@@ -82,23 +87,19 @@
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
   <meta property="og:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : CB_IMG.'/og.jpg'; ?>">
-  <meta property="og:description" content="<?= $PAGE['description']; ?>">
+  <meta property="og:description" content="<?= CB_Description ?>">
   <meta property="og:url" content="<?= site_url() ?>">
-  <meta property="og:title" content="<?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?>">
+  <meta property="og:title" content="<?= CB_Title ?>">
   <meta property="article:publisher" content="<?= $CB_Publisher['og'] ?>">
 <!--- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="<?= $CB_Publisher['twitter'] ?>">
   <meta name="twitter:creator" content="<?= $CB_Publisher['twitter'] ?>">
   <meta name="twitter:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : CB_IMG.'/twitter.jpg'; ?>">
-  <meta name="twitter:description" content="<?= $PAGE['description']; ?>">
-  <meta name="twitter:title" content="<?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?>">
+  <meta name="twitter:description" content="<?= CB_Description ?>">
+  <meta name="twitter:title" content="<?= CB_Title ?>">
 <!-- Custom -->
 
 <!-- Wordpress -->
   <?php wp_head(); ?>
 </head>
-<?php
-  $meta = get_post_meta(get_the_ID(), 'NAME', true);
-  echo ($meta) ? $meta : bloginfo('description');
-?>
