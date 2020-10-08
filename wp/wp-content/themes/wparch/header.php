@@ -15,14 +15,14 @@
    define('CB_Title', wp_title(' ~ ',false,'right').get_bloginfo('name'));
    define('CB_Canonical', get_permalink());
 
-   $CB_Thumbnail_Full = if (has_post_thumbnail()) the_post_thumbnail( 'full' );
-   $CB_Thumbnail_Medium = if (has_post_thumbnail()) the_post_thumbnail( 'medium' );
-   $CB_Thumbnail_Thumbnail = if (has_post_thumbnail()) the_post_thumbnail( 'thumbnail' );
+   $CB_IMG_Full = (has_post_thumbnail()) ? get_the_post_thumbnail_url(null,'full') : CB_IMG.'/IMG_Full.jpeg';
+   $CB_IMG_Medium = (has_post_thumbnail()) ? get_the_post_thumbnail_url(null,'medium') : CB_IMG.'/IMG_Medium.jpeg';
+   $CB_IMG_Thumbnail = (has_post_thumbnail()) ? get_the_post_thumbnail_url(null,'thumbnail') : CB_IMG.'/IMG_Thumbnail.jpeg';
 
    $CB_Publisher = array(
      'DC'  =>  '',
      'og'  =>  '',
-     'twitter'  =>  '',
+     'twitter'  =>  ''
    );
 
 ?>
@@ -90,7 +90,7 @@
   <meta property="og:locale" content="fa_IR">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
-  <meta property="og:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : CB_IMG.'/og.jpg'; ?>">
+  <meta property="og:image" content="<?= $CB_IMG_Full ?>">
   <meta property="og:description" content="<?= CB_Description ?>">
   <meta property="og:url" content="<?= site_url() ?>">
   <meta property="og:title" content="<?= CB_Title ?>">
@@ -99,7 +99,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="<?= $CB_Publisher['twitter'] ?>">
   <meta name="twitter:creator" content="<?= $CB_Publisher['twitter'] ?>">
-  <meta name="twitter:image" content="<?= ($PAGE['image']) ? $PAGE['image'] : CB_IMG.'/twitter.jpg'; ?>">
+  <meta name="twitter:image" content="<?= $CB_IMG_Full ?>">
   <meta name="twitter:description" content="<?= CB_Description ?>">
   <meta name="twitter:title" content="<?= CB_Title ?>">
 <!-- Custom -->
