@@ -83,6 +83,7 @@ new WPAlchemy_MetaBox(array(
 /*
 * Enqueues
 **/
+include_once TEMPLATEPATH.'/inc/jdf.php';
 function all_enqueue() {
   /* Jquery */
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/asset/js/jquery.min.js' );
