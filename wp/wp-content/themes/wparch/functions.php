@@ -112,7 +112,7 @@ function wpb_custom_new_menu() {
   register_nav_menus(
     array(
       'arch-hedear' => __( 'Header Right' ),
-      'extra-menu' => __( 'Extra Menu' )
+      'arch-menu' => __( 'Main Menu' )
     )
   );
 }

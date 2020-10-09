@@ -39,3 +39,74 @@
 
 .cb-ltr {direction: ltr;}
 .cb-rtl {direction: rtl;}
+
+
+/* Mega Menu */
+@media screen and ( min-width: 500px ) {
+
+  .main-navigation ul:hover li ul,
+  .main-navigation ul:hover li ul li ul {
+    display: inherit;
+  }
+
+  .main-navigation {
+    position: relative;
+  }
+  .main-navigation li {
+    position: static;
+  }
+  .main-navigation ul li:hover ul {
+    display: inherit;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .main-navigation ul li:hover ul li ul {
+    display: inherit;
+    position: relative;
+    left: 0;
+  }
+
+  .main-navigation {
+      position: relative;
+  }
+  .main-navigation li {
+      position: static;
+  }
+  .main-navigation ul li:hover ul {
+      display: inherit;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+  }
+  .main-navigation ul li:hover ul li ul {
+      display: inherit;
+      position: relative;
+      left: 0;
+  }
+  .main-navigation ul li:hover ul {
+      display: inherit;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: #bababa;
+  }
+  .main-navigation ul:hover ul li a:link,
+  .main-navigation ul:hover ul li a:visited {
+      color: #b01b1b;
+      text-decoration: underline;
+  }
+  .main-navigation ul:hover ul li ul li a:link,
+  .main-navigation ul:hover ul li ul li a:visited {
+      color: #fff;
+      text-decoration: none;
+  }
+  .main-navigation ul:hover ul li ul li a {
+      padding-left: 1em;
+      padding-top: 0;
+  }
+  
+}
