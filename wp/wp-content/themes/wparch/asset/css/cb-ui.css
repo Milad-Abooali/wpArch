@@ -42,5 +42,49 @@
 
 
 /* Flyout Menu */
+.arch-menu {
+  line-height: 50px;
+}
+.arch-menu ul {
+  margin:0 -40px 0 0;
+  list-style-type: none;
+  list-style: none;
+  list-style-image: none;
+}
+.arch-menu > ul > li {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.arch-menu > ul > li:hover {
+  background-color: #eee;
+}
+.arch-menu > ul > li:hover > ul {
+    display: block;
+    animation: slideDown 0.5s
+}
+@keyframes slideDown{
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.arch-menu ul ul {
+    border-top: 5px solid rgba(0,0,0,0.9);
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    z-index: 99999;
+    width: 180px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+
 
 /* Mega Menu */

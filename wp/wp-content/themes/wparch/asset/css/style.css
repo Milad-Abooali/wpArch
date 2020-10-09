@@ -137,7 +137,6 @@ div.arch-header-menu li {
 		display: inline-block;
 		padding-right: 10px;
 		border-right: 1px solid rgba(200, 200, 200, 0.3);
-
 }
 div.arch-header-menu a { }
 
@@ -654,6 +653,7 @@ margin-bottom: 32px;
 
 /** End(popup) */
 
+
 .dropdown-submenu {
     position: relative;
 }
@@ -938,3 +938,8 @@ input {
 
 /*  Serch page   */
 .search-size {height: 200px;}
+
+#blog-logo {
+	max-width: 90%;
+	margin: 0 auto;
+}
