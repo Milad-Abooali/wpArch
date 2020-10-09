@@ -33,4 +33,13 @@
     </div>
   </div>
 </div>
-<?= the_custom_logo(); ?>
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <?php (has_custom_logo()) ? the_custom_logo() : (echo '<img src="'.CB_IMG.'/wpArch.png">'); ?>
+      </div>
+    </div>
+  </div>
+</div>

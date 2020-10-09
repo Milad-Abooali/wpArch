@@ -1,6 +1,15 @@
 <?php
 
 /*
+* Them Asset
+**/
+define('CB_CDN', null);
+define('CB_IMG',get_template_directory_uri().'/asset/img');
+define('CB_JS',get_template_directory_uri().'/asset/js');
+define('CB_CSS',get_template_directory_uri().'/asset/css');
+
+
+/*
 * Them Setings
 **/
 $defaults = array(
@@ -17,6 +26,7 @@ $defaults = array(
     'admin-preview-callback' => '',
 );
 add_theme_support( 'custom-background', $defaults );
+
 $defaults = array(
     'default-image'          => '',
     'random-default'         => false,
@@ -34,24 +44,22 @@ $defaults = array(
     'video-active-callback'  => 'is_front_page',
 );
 add_theme_support( 'custom-header', $defaults );
+
 $defaults = array(
-    'height'      => 100,
-    'width'       => 400,
+    'height'      => 125,
+    'width'       => 'auto',
     'flex-height' => true,
     'flex-width'  => true,
     'header-text' => array( 'site-title', 'site-description' ),
 );
 add_theme_support( 'custom-logo', $defaults );
+
+
+
 add_theme_support('post-thumbnails');
+
 include_once TEMPLATEPATH.'/inc/cb-color.php';
 
-/*
-* Them Asset
-**/
-define('CB_CDN', null);
-define('CB_IMG',get_template_directory_uri().'/asset/img');
-define('CB_JS',get_template_directory_uri().'/asset/js');
-define('CB_CSS',get_template_directory_uri().'/asset/css');
 
 /*
 * Costum Fields
@@ -82,7 +90,7 @@ new WPAlchemy_MetaBox(array(
 
 
 /*
-* Nav Menu
+* Costum Menu
 **/
 function wpb_custom_new_menu() {
   register_nav_menus(
