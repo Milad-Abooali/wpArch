@@ -124,7 +124,7 @@ add_action( 'init', 'wpb_custom_new_menu' );
 include_once TEMPLATEPATH.'/inc/jdf.php';
 function all_enqueue() {
   /* Jquery */
-    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/asset/js/jquery.min.js' );
+    wp_enqueue_script( 'jquery-min', get_template_directory_uri() . '/asset/js/jquery.min.js' );
 
   /* Bootstrap */
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/asset/js/bootstrap.min.js' );
