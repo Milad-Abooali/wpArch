@@ -63,9 +63,9 @@ function custom_logo() {
   $custom_logo_id = get_theme_mod('custom_logo');
   $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
   if ( has_custom_logo() ) {
-          return '<img src="'. esc_url( $logo[0] ) .'">';
+          return esc_url($logo[0]);
   } else {
-          return '<img src="'. CB_IMG . '/wpArch.png' .'">';
+          return CB_IMG.'/wpArch.png';
   }
 }
 

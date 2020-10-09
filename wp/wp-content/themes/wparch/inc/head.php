@@ -33,15 +33,18 @@
     </div>
   </div>
 </div>
-<!-- Logo row -->
 
+<!-- Logo row -->
 <div class="container-fluid">
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-        <?= custom_logo() ?>
-
+        <a href="<?php site_url(); ?>" title="<?php bloginfo('name') ?>">
+          <img src="<?= custom_logo() ?>" alt="<?php bloginfo('name') ?>">
+        </a>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Menu row -->
