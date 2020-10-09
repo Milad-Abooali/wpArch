@@ -86,15 +86,13 @@ font-size:14px;
 
 /*** header ***/
 
-.ako_header {
-	padding: 1px 0px;
+.arch_header {
+	padding: 5px 1px 0px;
 }
-.ako_header a, .ako_header {
+.arch_header,
+.arch_header a {
 	color: #fff;
-	font-size: 11px;
-	color: #fff;
-	font-size: 11px;
-
+	font-size: 12px;
 }
 
 .other_link {

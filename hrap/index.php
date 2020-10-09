@@ -42,7 +42,7 @@
 
 <!-- start header -->
 
-<div class="container-fluid bgblack ako_header">
+<div class="container-fluid bgblack arch_header">
   <div class="container"> <div class="row" >
     <div class="col-md-5 col-sm-5 col-xs-12 pull-left text-left text-center-xs social_link hidden-xs">
        <link href="fa/News-Category-293.html" itemprop="url" />

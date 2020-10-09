@@ -1,0 +1,32 @@
+
+
+.cb-ico {
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+}
+.cb-ico-m {
+  height: 25px;
+  width: 25px;
+  margin: 0 3px;
+}
+.cb-ico-l {
+  height: 32px;
+  width: 32px;
+  margin: 0 3px;
+}
+.cb-ico-bl {
+  height: 64px;
+  width: 64px;
+  margin: 0 3px;
+}
+
+.cb-filter-grey {
+  -webkit-filter: grayscale(0.85);
+  filter: gray;
+  filter: grayscale(0.85);
+}
+.cb-filter-grey:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
