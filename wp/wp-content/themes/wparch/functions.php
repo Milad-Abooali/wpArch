@@ -96,6 +96,9 @@ function all_enqueue() {
   /* Fontawesome */
     wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/asset/css/fontawesome/css/font-awesome.min.css' );
 
+    /* ez-space */
+      wp_enqueue_style( 'ezspace', get_template_directory_uri() . '/asset/css/ez-space.css' );
+
   /* Popper */
     // wp_enqueue_script( 'popper_js', get_template_directory_uri() . '/asset/js/popper.min.js' );
 

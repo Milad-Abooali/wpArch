@@ -54,6 +54,26 @@ public static function register ( $wp_customize ) {
     )
   ) );
 
+  $wp_customize->add_setting( 'link_icolor',
+    array(
+      'default'    => '#fff', //Default setting/value to save
+      'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
+      'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
+      'transport'  => 'refresh', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
+      'sanitize_callback'  => 'esc_attr', //sanitization (optional?)
+    )
+  );
+  $wp_customize->add_control( new WP_Customize_Color_Control(
+    $wp_customize, //Pass the $wp_customize object (required)
+    'wpArch_link_icolor', //Set a unique ID for the control
+    array(
+      'label'      => __( 'Icone Color', 'wpArch' ), //Admin-visible name of the control
+      'settings'   => 'link_icolor', //Which setting to load and manipulate (serialized is okay)
+      'priority'   => 10, //Determines the order this control appears in for the specified section
+      'section'    => 'colors', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+    )
+  ) );
+
   //4. We can also change built-in settings by modifying properties. For instance, let's make some stuff use live preview JS...
   $wp_customize->get_setting( 'blogname' )->transport = 'refresh';
   $wp_customize->get_setting( 'blogdescription' )->transport = 'refresh';
@@ -67,7 +87,9 @@ public static function header_output() {
 <!--Theme Customizer CSS-->
 <style type="text/css">
 <?php self::generate_css('.main-color', 'background-color', 'link_maincolor'); ?>
-<?php self::generate_css('.text-color', 'color', 'link_textcolor'); ?>
+<?php self::generate_css('.main-color', 'color', 'link_textcolor'); ?>
+<?php self::generate_css('.main-color a', 'color', 'link_textcolor'); ?>
+<?php self::generate_css('.i-color', 'color', 'link_icolor'); ?>
 </style>
 <!--/Theme Customizer CSS-->
 <?php
