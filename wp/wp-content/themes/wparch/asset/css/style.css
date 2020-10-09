@@ -3,7 +3,7 @@
 	display: inline-block;
 	direction: ltr;
 	overflow: hidden;
-	width: 100px;
+	width: 90px;
 	height: 32px;
 	transition: width 0.5s;
 	border: 1px solid rgba(0,0,0,0.0);
@@ -117,8 +117,29 @@ font-size:14px;
 }
 
 .other_link {
-	margin-top: 3px;
+	color:rgba(255, 255, 255, 0.5);
+	margin-top: 5px;
 }
+.other_link a {
+	padding-left: 10px;
+}
+div.arch-header-menu {
+	display: inline-block;
+}
+div.arch-header-menu ul {
+    margin:0 -40px 0 0;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    text-align:right;
+}
+div.arch-header-menu li {
+		display: inline-block;
+		padding-right: 10px;
+		border-right: 1px solid rgba(200, 200, 200, 0.3);
+
+}
+div.arch-header-menu a { }
 
 /** menu **/
 

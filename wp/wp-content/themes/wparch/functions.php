@@ -82,6 +82,19 @@ new WPAlchemy_MetaBox(array(
 
 
 /*
+* Nav Menu
+**/
+function wpb_custom_new_menu() {
+  register_nav_menus(
+    array(
+      'arch-hedear' => __( 'Header Right' ),
+      'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'wpb_custom_new_menu' );
+
+/*
 * Enqueues
 **/
 include_once TEMPLATEPATH.'/inc/jdf.php';
