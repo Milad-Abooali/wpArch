@@ -1,6 +1,6 @@
 
 <!-- Header Bar -->
-<div class="container-fluid bgblack arch_header">
+<div class="container-fluid main-color arch_header">
   <div class="container">
     <div class="row" >
       <div class="col-md-5 col-sm-5 col-xs-12 pull-left text-left hidden-xs">
@@ -30,3 +30,4 @@
     </div>
   </div>
 </div>
+<?= the_custom_logo(); ?>

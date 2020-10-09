@@ -43,6 +43,7 @@ $defaults = array(
 );
 add_theme_support( 'custom-logo', $defaults );
 add_theme_support('post-thumbnails');
+include_once TEMPLATEPATH.'/inc/cb-color.php';
 
 /*
 * Them Asset
