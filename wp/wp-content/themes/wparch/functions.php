@@ -10,6 +10,11 @@ define('CB_CSS',get_template_directory_uri().'/asset/css');
 
 
 /*
+*  Image Costum Size
+**/
+// add_image_size( 'logo', 'auto', 120, array( 'left', 'top' ) );
+
+/*
 * Them Setings
 **/
 $defaults = array(
@@ -46,19 +51,30 @@ $defaults = array(
 add_theme_support( 'custom-header', $defaults );
 
 $defaults = array(
-    'height'      => 125,
-    'width'       => 'auto',
-    'flex-height' => true,
+    'height'      => 120,
+    'width'       => 400,
+    'flex-height' => false,
     'flex-width'  => true,
-    'header-text' => array( 'site-title', 'site-description' ),
+    'header-text' => array(),
 );
 add_theme_support( 'custom-logo', $defaults );
 
+function custom_logo() {
+  $custom_logo_id = get_theme_mod('custom_logo');
+  $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+  if ( has_custom_logo() ) {
+          return '<img src="'. esc_url( $logo[0] ) .'">';
+  } else {
+          return '<img src="'. CB_IMG . '/wpArch.png' .'">';
+  }
+}
 
 
 add_theme_support('post-thumbnails');
 
 include_once TEMPLATEPATH.'/inc/cb-color.php';
+
+
 
 
 /*
