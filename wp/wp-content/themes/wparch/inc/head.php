@@ -388,14 +388,15 @@
 
 			    </a></li>   </ul></li></ul>
 
-<form method="post" action="fa/Search-ResultSearchGoogle.html" class="navbar-form navbar-left hidden-md" role="search" accept-charset="UTF-8">
-<div class="input-group col-md-12">
-<span class="input-group-btn">
-<button class="btn btn-warning " type="submit">
-<i class="glyphicon glyphicon-search"></i>
-</button> </span>
-<input autocomplete="off" type="text" id="search" name="searchinarel" class="form-control " placeholder="جستجو...">
-</div>
+<form method="get" action="<?= site_url() ?>" class="navbar-form navbar-left hidden-md cb-ltr" role="search" accept-charset="UTF-8">
+  <div class="input-group col-md-12">
+    <span class="input-group-btn">
+      <button class="btn btn-warning" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </span>
+    <input autocomplete="off" type="text" id="search" name="s" class="form-control" placeholder="جستجو...">
+  </div>
 </form>
 
 

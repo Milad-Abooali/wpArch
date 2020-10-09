@@ -36,3 +36,6 @@
   -webkit-filter: grayscale(0);
   filter: none;
 }
+
+.cb-ltr {direction: ltr;}
+.cb-rtl {direction: rtl;}
