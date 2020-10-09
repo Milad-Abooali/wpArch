@@ -4,10 +4,16 @@
   <div class="container">
     <div class="row" >
       <div class="col-md-5 col-sm-5 col-xs-12 pull-left text-left text-center-xs social_link hidden-xs">
-        <span itemscope="" itemtype="https://schema.org/Organization">
-          <a href="https://instagram.com/arel.ir" title="Instagram"><img src="uploads/myimages/icon/instagram-blk.png"></a>
-          <a href="https://instagram.com/arel.ir" title="Telegram"><img src="uploads/myimages/icon/telegram-blk.png"></a>
-          <a href="video" itemprop="sameAs"><img src="uploads/myimages/icon/aparat-blk.png"></a>
+        <span>
+          <a href="https://instagram.com/arel.ir" title="Facebook"><img class="cb-ico-link" src="http://www.google.com/s2/favicons?domain=facebook.com" alt="Facebook"></a>
+          <a href="https://instagram.com/arel.ir" title="Instagram"><img class="cb-ico-link" src="http://www.google.com/s2/favicons?domain=instagram.com" alt="Instagram"></a>
+          <a href="https://instagram.com/arel.ir" title="Telegram"><img class="cb-ico-link" src="http://www.google.com/s2/favicons?domain=telegram.com" alt="Telegram"></a>
+          <a href="https://instagram.com/arel.ir" title="Twitter"><img class="cb-ico-link" src="http://www.google.com/s2/favicons?domain=twitter.com" alt="twitter"></a>
+          <a href="https://instagram.com/arel.ir" title="Youtube"><img class="cb-ico-link" src="http://www.google.com/s2/favicons?domain=youtube.com" alt="youtube"></a>
+          <a href="https://instagram.com/arel.ir" title="Pinterest"><img class="cb-ico-link" src="http://www.google.com/s2/favicons?domain=pinterest.com" alt="Pinterest"></a>
+          <a href="https://instagram.com/arel.ir" title="Aparat"><img class="cb-ico-link" src="http://www.google.com/s2/favicons?domain=aparat.com" alt="Aparat"></a>
+          <a href="https://instagram.com/arel.ir" title="LinkedIn"><img class="cb-ico-link" src="http://www.google.com/s2/favicons?domain=linkedin.com" alt="LinkedIn"></a>
+
         </span>
         <span>امروز: <?= jdate(' l, j F Y') ?></span>
       </div>
