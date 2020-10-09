@@ -92,6 +92,9 @@ function all_enqueue() {
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/asset/js/bootstrap.min.js' );
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/asset/css/bootstrap.min.css' );
 
+  /* Fontawesome */
+    wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/asset/css/fontawesome/css/fontawesome.min.css' );
+
   /* Popper */
     // wp_enqueue_script( 'popper_js', get_template_directory_uri() . '/asset/js/popper.min.js' );
 
