@@ -42,28 +42,23 @@
 
 
 /* Flyout Menu */
-.arch-menu {
+.fly-menu {
   line-height: 50px;
+  margin-right: -30px;
 }
-.arch-menu ul {
+.fly-menu ul {
   margin:0 -40px 0 0;
   list-style-type: none;
   list-style: none;
   list-style-image: none;
 }
-.arch-menu > ul > li {
-  position: relative;
+.fly-menu li {position: relative;}
+.fly-menu > ul > li {
   display: inline-block;
   padding-right: 15px;
   padding-left: 15px;
 }
-.arch-menu > ul > li:hover {
-  background-color: #eee;
-}
-.arch-menu > ul > li:hover > ul {
-    display: block;
-    animation: slideDown 0.5s
-}
+.fly-menu li:hover {background-color: rgba(200,200,200,0.2);}
 @keyframes slideDown{
   from {
     transform: translateY(-10%);
@@ -74,7 +69,7 @@
     opacity: 1;
   }
 }
-.arch-menu ul ul {
+.fly-menu ul ul {
     border-top: 5px solid rgba(0,0,0,0.9);
     display: none;
     position: absolute;
@@ -85,6 +80,20 @@
     background: #fff;
     box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
 }
-
+.fly-menu ul li:hover > ul {
+    display: block;
+    animation: slideDown 0.5s
+}
+.fly-menu ul ul li {
+  display: block;
+  margin:0 -40px 0 0;
+  padding-right: 10px;
+}
+.fly-menu > ul > li:hover > ul > li {position: relative;}
+.fly-menu > ul > li:hover > ul > li:hover ul {
+  margin:0;
+  top: 0;
+  right: 100%;
+}
 
 /* Mega Menu */

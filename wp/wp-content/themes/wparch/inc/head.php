@@ -76,7 +76,7 @@
               <?php
               wp_nav_menu(array(
                   'theme_location' => 'arch-menu',
-                  'container_class' => 'arch-menu'));
+                  'container_class' => 'fly-menu'));
               ?>
             </div>
           </nav>
