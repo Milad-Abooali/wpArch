@@ -84,3 +84,93 @@
     </div>
   </div>
 </div>
+
+
+
+
+<!-- first 3col home-index -->
+<div class="container-fluid">
+<div class="container starter_margin_top">
+
+<div class="row">
+<div class="col-md-8" id="slideshow"> <div class="carousel slide" data-ride="carousel"  id="carousel-408559"><ol class="carousel-indicators"><li class=" active" data-slide-to="0" data-target="#carousel-408559"></li><li class="" data-slide-to="1" data-target="#carousel-408559"></li><li class="" data-slide-to="2" data-target="#carousel-408559"></li><li class="" data-slide-to="3" data-target="#carousel-408559"></li><li class="" data-slide-to="4" data-target="#carousel-408559"></li><li class="" data-slide-to="5" data-target="#carousel-408559"></li></ol>
+ <div class="carousel-inner" role="listbox">
+ <div class="item active"  >
+ <a href="https://www.arel.ir/fa/News-View-8576.html" title="معماری سبز و طراحی داخلی ویلا برای یک زوج مسن" >
+ <div style="background:url('https://www.arel.ir/uploads/myimages/1399/5/Aleshtar_Architectural_Office/greenery (1).jpg') right top;
+          background-size:cover;" class="slider-size">
+
+
+
+
+<div class="carousel-caption"> <p> معماری سبز و طراحی داخلی ویلا برای یک زوج مسن </p></div>
+</div></a></div>
+ <div class="item"  >
+ <a href="https://www.arel.ir/fa/News-View-8573.html" title="خانه های مدرن چگونه از فناوری هوشمند استقبال می کنند؟" >
+ <div style="background:url('https://www.arel.ir/uploads/myimages/1399/5/Aleshtar_Architectural_Office/smart-home (1).jpg') right top;
+          background-size:cover;" class="slider-size">
+
+
+
+
+<div class="carousel-caption"> <p> خانه های مدرن چگونه از فناوری هوشمند استقبال می کنند؟ </p></div>
+</div></a></div>
+ <div class="item"  >
+ <a href="https://www.arel.ir/fa/News-View-8571.html" title="آینده معماری  در دنیای پس از COVID-19 چگونه است؟" >
+ <div style="background:url('https://www.arel.ir/uploads/myimages/1399/5/Aleshtar_Architectural_Office/Post-Pandemic (1).jpg') right top;
+          background-size:cover;" class="slider-size">
+
+
+
+
+<div class="carousel-caption"> <p> آینده معماری  در دنیای پس از COVID-19 چگونه است؟ </p></div>
+</div></a></div>
+ <div class="item"  >
+ <a href="https://www.arel.ir/fa/News-View-7432.html" title="هتلی که توانایی معمارانش را به رخ می کشد!" >
+ <div style="background:url('https://www.arel.ir/uploads/myimages/1397/5/hotel-jaungel/jungle%20(1).jpg') right top;
+          background-size:cover;" class="slider-size">
+
+
+
+
+<div class="carousel-caption"> <p> هتلی که توانایی معمارانش را به رخ می کشد! </p></div>
+</div></a></div>
+ <div class="item"  >
+ <a href="https://www.arel.ir/fa/News-View-8441.html" title="مثال هایی از  به یاد ماندنی ترین خانه های دهه گذشته!" >
+ <div style="background:url('https://www.arel.ir/uploads/myimages/1398/10/3d_print/Memorable-house-Arel (7).jpg') right top;
+          background-size:cover;" class="slider-size">
+
+
+
+
+<div class="carousel-caption"> <p> مثال هایی از  به یاد ماندنی ترین خانه های دهه گذشته! </p></div>
+</div></a></div>
+ <div class="item"  >
+ <a href="https://www.arel.ir/fa/News-View-8167.html" title="50 طراحی ویلای مدرن و خیره کننده" >
+ <div style="background:url('https://www.arel.ir/uploads/myimages/1398/3/modern%20villa/villa-modern-(0).jpg') right top;
+          background-size:cover;" class="slider-size">
+
+
+
+
+<div class="carousel-caption"> <p> 50 طراحی ویلای مدرن و خیره کننده </p></div>
+</div></a></div> </div>
+ <a class="left carousel-control" href="#carousel-408559" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-408559" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<script>
+
+
+$(document).ready(function() {
+  $("#carousel-408559").carousel({ interval: 5000, cycle: true });
+});
+
+
+</script>
+
+
+
+  </div>
+<div class="col-md-4 hidden-xs" id="ceneterheadtop"> <div class="css-rss" ><a href=fa/News-View-8567.html target="_blank" ><img alt="فرهاد احمدی (۲۲ دی‌ ماه ۱۳۲۹ – ۱۰ شهریور ماه ۱۳۹۹)" src=mresize.php?width=150&height=150&image=https://www.arel.ir/uploads/myimages/1395/10/ahmadi/farhad-ahmadi.jpg  title="فرهاد احمدی (۲۲ دی‌ ماه ۱۳۲۹ – ۱۰ شهریور ماه ۱۳۹۹)" /> </a></div><div class="css-rss" ><a href=fa/News-View-8557.html target="_blank" ><img alt="طراحی داخلی  Aviator Box / تقدیر شده در آرکیتایزر۲۰۲۰" src=mresize.php?width=150&height=150&image=/uploads/myimages/1399/5/Aleshtar_Architectural_Office/Aviator_Box(1).jpg  title="طراحی داخلی  Aviator Box / تقدیر شده در آرکیتایزر۲۰۲۰" /> </a></div><div class="css-rss" ><a href=fa/News-View-6246.html target="_blank" ><img alt=" فرهنگسرای ارسباران + پلان" src=mresize.php?width=150&height=150&image=https://www.arel.ir/uploads/myimages/1396/3/arasbaran%20cultural%20cente/aarasbaran1%20(1).jpg  title=" فرهنگسرای ارسباران + پلان" /> </a></div><div class="css-rss" ><a href=fa/News-View-8548.html target="_blank" ><img alt="بوتیک ساعت ریچارد میل / مهندسین مشاور دش" src=mresize.php?width=150&height=150&image=https://www.arel.ir/uploads/myimages/1399/4/Fereshteh_Watch/Watch_Boutique_Dash(5).jpg  title="بوتیک ساعت ریچارد میل / مهندسین مشاور دش" /> </a></div><div class="css-rss" ><a href=fa/News-View-8534.html target="_blank" ><img alt="مجموعه مستند چهل گره/ نگاهی متفاوت به معماری ایرانی" src=mresize.php?width=150&height=150&image=https://www.arel.ir/uploads/myimages/1399/3/2A7PDYH-800.jpg  title="مجموعه مستند چهل گره/ نگاهی متفاوت به معماری ایرانی" /> </a></div><div class="css-rss" ><a href=fa/News-View-8227.html target="_blank" ><img alt="ماجرای طراحی ساختمان جیپ از وارطان هوانسیان" src=mresize.php?width=150&height=150&image=https://www.arel.ir/uploads/myimages/1398/5/%D8%B3%D8%A7%D8%AE%D8%AA%D9%85%D8%A7%D9%86_%D8%AC%DB%8C%D9%BE/jeep-office-building(1).jpg  title="ماجرای طراحی ساختمان جیپ از وارطان هوانسیان" /> </a></div><div class="css-rss" ><a href=fa/News-View-7108.html target="_blank" ><img alt="ایران مال یکی از بزرگترین مجتمع تجاری، تفریحی و اداری خاورمیانه" src=mresize.php?width=150&height=150&image=https://www.arel.ir/uploads/myimages/1397/iran_mall/Iran_Mall_arel(39).jpg  title="ایران مال یکی از بزرگترین مجتمع تجاری، تفریحی و اداری خاورمیانه" /> </a></div><div class="css-rss" ><a href=fa/News-View-8511.html target="_blank" ><img alt="دانشکده داروسازی البرز / درک فضا / مهیار جمشیدی" src=mresize.php?width=150&height=150&image=https://www.arel.ir/uploads/myimages/1399/2/Alborz_School%20of%20Pharmacy(4).jpg  title="دانشکده داروسازی البرز / درک فضا / مهیار جمشیدی" /> </a></div><div class="css-rss" ><a href=fa/News-View-8506.html target="_blank" ><img alt="آزمایشگاه  بهار در غرب‌تهران / درک فضا - مهیار جمشیدی" src=mresize.php?width=150&height=150&image=https://www.arel.ir/uploads/myimages/1399/1/Darkefaza/BaharLaboratory%20(1).jpg  title="آزمایشگاه  بهار در غرب‌تهران / درک فضا - مهیار جمشیدی" /> </a></div>  </div>
+</div> </div></div>
+
+<!-- end first 3col home-index -->
