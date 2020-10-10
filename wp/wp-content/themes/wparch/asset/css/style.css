@@ -168,7 +168,7 @@ div.arch-header-menu a { }
 	font-size: 13px !important
 }
 
-.css-rss img {
+.slides-box img {
 	margin-left: 2px;
 	padding-bottom: 2px;
 	float: right;
@@ -178,7 +178,7 @@ div.arch-header-menu a { }
     filter: grayscale(100%);
 }
 
-.css-rss img:hover {
+.slides-box img:hover {
     filter: none;
     -webkit-filter: grayscale(0%);
 }
