@@ -17,10 +17,7 @@ get_header();
 
 <hr>
 home
-
 <hr>
-<?php do_shortcode("[SlidesRow]"); ?>
-<?php do_shortcode("[SlidesRow]"); ?>
 
 <?php
 
