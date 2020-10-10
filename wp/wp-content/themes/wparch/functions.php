@@ -151,3 +151,8 @@ function all_enqueue() {
     wp_enqueue_style( 'cbui_css', get_template_directory_uri() . '/asset/css/cb-ui.css' );
 }
 add_action( 'wp_enqueue_scripts', 'all_enqueue' );
+
+/*
+* Extra
+**/
+include_once TEMPLATEPATH.'/inc/shortcode.php';
