@@ -48,7 +48,7 @@
 </div>
 
 <!-- Menu row -->
-<div class="container-fluid top-bottom-line arel_top_menu">
+<div class="container-fluid top-bottom-line arch_top_menu cb-sticky">
   <div class="container">
     <div class="row">
       <div class="col-xs-8 col-md-3">

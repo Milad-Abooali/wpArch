@@ -39,7 +39,12 @@
 
 .cb-ltr {direction: ltr;}
 .cb-rtl {direction: rtl;}
-
+.cb-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: +999;
+}
 
 /* Flyout Menu */
 .fly-menu {
