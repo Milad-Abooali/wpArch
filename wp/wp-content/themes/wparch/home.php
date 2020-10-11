@@ -25,13 +25,9 @@ get_header();
       <div class="col-md-8" id="Posts">
 
         <?php
-        $args = array(
-            'posts_per_page' => 9
-        );
-        $the_query = new WP_Query($args);
-        if ($the_query->have_posts() ) {
-            while ($the_query->have_posts()) {
-                $the_query->the_post();
+        if (have_posts() ) {
+            while (have_posts()) {
+                the_post();
                 ?>
                 <section itemprop="category" class="post-list">
                   <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
@@ -52,7 +48,14 @@ get_header();
         ?>
 
 
-  <div class='text-center col-md-12' >مجموع ۷۸۷۵ رکورد - در  ۶۰۶ صفحه<br/>  <ul class='pagination'><li class="active"><a>۱</a></li><li><a href="https://www.arel.ir/fa/News-page-2.html">۲</a></li><li><a href="https://www.arel.ir/fa/News-page-3.html">۳</a></li><li><a href="https://www.arel.ir/fa/News-page-4.html">۴</a></li><li><a href="https://www.arel.ir/fa/News-page-5.html">۵</a></li><li><a href="https://www.arel.ir/fa/News-page-606.html">۶۰۶</a></li><li><a href="https://www.arel.ir/fa/News-page-1.html">&#187;</a></li></ul></div>
+  <div class='text-center col-md-12'>
+      <?php pagenation_func(); ?>
+  </div>
+  <div class='text-center col-md-12' >
+
+
+    مجموع ۷۸۷۵ رکورد - در  ۶۰۶ صفحه<br/>  <ul class='pagination'><li class="active"><a>۱</a></li><li><a href="https://www.arel.ir/fa/News-page-2.html">۲</a></li><li><a href="https://www.arel.ir/fa/News-page-3.html">۳</a></li><li><a href="https://www.arel.ir/fa/News-page-4.html">۴</a></li><li><a href="https://www.arel.ir/fa/News-page-5.html">۵</a></li><li><a href="https://www.arel.ir/fa/News-page-606.html">۶۰۶</a></li><li><a href="https://www.arel.ir/fa/News-page-1.html">&#187;</a></li></ul>
+  </div>
 
   </div>
 

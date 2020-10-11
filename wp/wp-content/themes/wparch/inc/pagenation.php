@@ -66,5 +66,7 @@ function pagenation_func() {
         printf( '<li>%s</li>' . "\n", get_next_posts_link() );
 
     echo '</ul></div>' . "\n";
+    $post_count = $wp_query->max_num_pages*$max;
+    echo 'کل موارد: ' . $post_count . ' مورد | صفحه' . $paged . ' از ' . $max;
 
 }
