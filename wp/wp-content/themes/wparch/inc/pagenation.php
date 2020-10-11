@@ -29,7 +29,7 @@ function pagenation_func() {
         $links[] = $paged + 1;
     }
 
-    echo '<div class="navigation"><ul>' . "\n";
+    echo '<div class="text-center row"><div class="col-sm-12 col-md-6 cb-ltr text-left"><ul class="pagination">' . "\n";
 
     /** Previous Post Link */
     if ( get_previous_posts_link() )
@@ -65,8 +65,9 @@ function pagenation_func() {
     if ( get_next_posts_link() )
         printf( '<li>%s</li>' . "\n", get_next_posts_link() );
 
-    echo '</ul></div>' . "\n";
+    echo '</ul></div><div class="col-sm-12 col-md-6  md-pt-25 text-right">';
     $post_count = $wp_query->max_num_pages*$max;
-    echo 'کل موارد: ' . $post_count . ' مورد | صفحه' . $paged . ' از ' . $max;
+    echo 'کل موارد: ' .'<strong>'. $post_count .'</strong>'. ' مورد | صفحه ' .'<strong>'. $paged .'</strong>'. ' از ' .'<strong>'. $max .'</strong>';
+    echo '</div></div>';
 
 }

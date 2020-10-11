@@ -45,19 +45,10 @@ get_header();
             }
         }
         wp_reset_postdata();
+        pagenation_func();
         ?>
 
-
-  <div class='text-center col-md-12'>
-      <?php pagenation_func(); ?>
-  </div>
-  <div class='text-center col-md-12' >
-
-
-    مجموع ۷۸۷۵ رکورد - در  ۶۰۶ صفحه<br/>  <ul class='pagination'><li class="active"><a>۱</a></li><li><a href="https://www.arel.ir/fa/News-page-2.html">۲</a></li><li><a href="https://www.arel.ir/fa/News-page-3.html">۳</a></li><li><a href="https://www.arel.ir/fa/News-page-4.html">۴</a></li><li><a href="https://www.arel.ir/fa/News-page-5.html">۵</a></li><li><a href="https://www.arel.ir/fa/News-page-606.html">۶۰۶</a></li><li><a href="https://www.arel.ir/fa/News-page-1.html">&#187;</a></li></ul>
-  </div>
-
-  </div>
+      </div>
 
 <div class="col-md-4 hidden-xs" id="leftblocks" > <section class="leftblockss">
 <h5>فروش پارکت و کاغذ دیواری</h5>
