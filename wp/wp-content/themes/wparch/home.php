@@ -26,44 +26,31 @@ get_header();
 
         <?php
         $args = array(
-            'tag' => 'ویژه',
             'posts_per_page' => 9
         );
         $the_query = new WP_Query($args);
         if ($the_query->have_posts() ) {
-            $i=0;
             while ($the_query->have_posts()) {
                 $the_query->the_post();
                 ?>
-                <div class="slides-box">
-                  <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                    <img alt="<?php the_title_attribute(); ?>" src="<?= get_the_post_thumbnail_url(null,'thumbnail') ?>" title="<?php the_title_attribute(); ?>">
-                  </a>
-                </div>
+                <section itemprop="category" class="post-list">
+                  <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+
+                  <div class='publishpost' id="<?= the_ID() ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php the_post_thumbnail_url(null,'medium') ?>">
+                    <div style="text-align: left;"><?php the_category('|'); ?></div>
+                    <?php the_excerpt(); ?>
+                  </div>
+                  <div class="readmore">
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">ادامه</a>
+                  </div>
+                </section>
                 <?php
-                $i++;
             }
         }
         wp_reset_postdata();
         ?>
 
-<section itemprop="category" class="newsfrintview">
-  <h3><a href="https://www.arel.ir/fa/News-View-8577.html">معماری بدون تماس: سنسورها و فناوری های جدید پس از COVID-19</a></h3>
-
-  <div class='publishnews' id="New8577">
-    <a href="https://www.arel.ir/fa/News-View-8577.html">
-      <img alt="معماری بدون تماس: سنسورها و فناوری های جدید پس از COVID-19" src="uploads/myimages/1399/5/Aleshtar_Architectural_Office/covid-design (1).jpg" title="معماری بدون تماس: سنسورها و فناوری های جدید پس از COVID-19" />
-    </a>
-    <div style="text-align: left;">	تحریریه معماری آرل</div>
-
-    در حالی که نگرانی از گسترش&nbsp;COVID-19&nbsp;از طریق تماس یا سطوح مشترک همچنان باعث آزار و انتقال بیماری به افراد می شود ، فناوری های بدون لمس راه حل های بالقوه ای را برای دفاتر یا سازمان هایی ارائه می دهند که بدون افزایش خطر انتشار ویروس برای ادامه کار خود تلاش می کنند.<br />
-    به ویژه در ایالات متحده ، این افزایش تقاضا برای محصولات بدون لمس این امکان را دارد که انقلابی در نحوه تعامل ما با فناوری های رایج در زندگی روزمره ایجاد کند. <span style="color:#ffa500;"><strong>آیا می توان تصور کرد که این فناوری ها به زودی با زندگی روزمره ما ادغام شوند؟</strong></span><br />
-    در ادامه با آرل ، &nbsp;با چند نمونه از فن آوری پیشگام بدون لمس همراه باشید كه نه فقط در فضاهای عمومی ، دفاتر و مشاغل ، بلكه در خانه های مسكونی نیز قابل استفاده هستند...
-  </div>
-  <div class="readmore">
-    <a href="https://www.arel.ir/fa/News-View-8577.html" title="معماری بدون تماس: سنسورها و فناوری های جدید پس از COVID-19">ادامه  </a>
-  </div>
-</section>
 
   <div class='text-center col-md-12' >مجموع ۷۸۷۵ رکورد - در  ۶۰۶ صفحه<br/>  <ul class='pagination'><li class="active"><a>۱</a></li><li><a href="https://www.arel.ir/fa/News-page-2.html">۲</a></li><li><a href="https://www.arel.ir/fa/News-page-3.html">۳</a></li><li><a href="https://www.arel.ir/fa/News-page-4.html">۴</a></li><li><a href="https://www.arel.ir/fa/News-page-5.html">۵</a></li><li><a href="https://www.arel.ir/fa/News-page-606.html">۶۰۶</a></li><li><a href="https://www.arel.ir/fa/News-page-1.html">&#187;</a></li></ul></div>
 

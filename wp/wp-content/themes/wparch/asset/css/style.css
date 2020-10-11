@@ -767,11 +767,11 @@ background-color: whitesmoke;
 /** catNews ***/
 
 
-.newsfrintview h3{
+.post-list h3{
     margin-bottom: 40px;
 }
 
-.newsfrintview h3 {
+.post-list h3 {
     margin-bottom: 30px;
     font-size: 1.2em;
     font-weight: 600;
@@ -905,9 +905,13 @@ input {
 	text-align: right;
 	direction: rtl
 }
-.publishnews, .publish{
+.publishpost, .publish{
 	direction: rtl !important;
 	text-align: justify !important
+}
+.publishpost img {
+	max-width: 100%;
+	height: auto;
 }
 .readmore {
     text-align: left;
