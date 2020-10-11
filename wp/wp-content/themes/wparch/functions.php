@@ -156,3 +156,4 @@ add_action( 'wp_enqueue_scripts', 'all_enqueue' );
 * Extra
 **/
 include_once TEMPLATEPATH.'/inc/shortcode.php';
+include_once TEMPLATEPATH.'/inc/pagenation.php';
