@@ -240,6 +240,16 @@ function get_breadcrumb() {
 }
 
 /*
+* Admin Notice
+**/
+function my_theme_dependencies() {
+  if( ! function_exists('plugin_function') )
+    echo '<div class="error"><p>' . __( 'Warning: The theme needs "wpforms-lite" Plugin', 'wpArch' ) . '</p></div>';
+}
+add_action( 'admin_notices', 'my_theme_dependencies' );
+
+
+/*
 * Get the current archive link
 **/
 function get_current_archive_link( $paged = true ) {
