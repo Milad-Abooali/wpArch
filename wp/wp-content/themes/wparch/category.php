@@ -29,14 +29,6 @@ get_header();
       </div>
       <!-- Posts -->
       <?php include_once TEMPLATEPATH.'/inc/posts-cat.php'; ?>
-      <!-- Sidebar -->
-      <div class="col-md-4 hidden-xs" id="leftblocks" >
-        <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-            <div id="sidecat" class="widget-area" role="complementary">
-            <?php dynamic_sidebar( 'sidebar-1' ); ?>
-            </div>
-        <?php endif; ?>
-      </div>
     </div>
   </div>
 </div>
