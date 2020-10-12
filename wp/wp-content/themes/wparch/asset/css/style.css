@@ -946,3 +946,25 @@ input {
 	max-width: 90%;
 	margin: 0 auto;
 }
+
+.btop-1{border-top: 1px solid #333;padding-top:25px;margin-top:25px;}
+
+
+.widget_newsletterwidget .tnp-field-email input {
+	width: 75%;
+	margin-left: 10px;
+}
+.widget_newsletterwidget .tnp-field-email * {
+	display: inline-block!important;
+}
+.widget_newsletterwidget .tnp-field-email {
+	direction: ltr;
+	text-align: left;
+}
+.widget_newsletterwidget .tnp-field-list {
+	direction: rtl;
+	text-align: right;
+}
+.widget_newsletterwidget .tnp-field-list input.tnp-preference {
+	margin: 0 5px;
+}

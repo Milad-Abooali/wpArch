@@ -160,6 +160,16 @@ function cb_widgets_init() {
         'before_title' => '<h5 class="widget-title">',
         'after_title' => '</h5>',
     ) );
+
+    register_sidebar( array(
+        'name' => __( 'Newsletter', 'cb' ),
+        'id' => 'sidebar-5',
+        'description' => __( 'The widgets appears on the Newsletter on all pages ', 'cb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => ' ',
+        'after_title' => ' ',
+    ) );
 }
 add_action( 'widgets_init', 'cb_widgets_init' );
 
@@ -202,6 +212,8 @@ add_action( 'wp_enqueue_scripts', 'all_enqueue' );
 **/
 include_once TEMPLATEPATH.'/inc/shortcode.php';
 include_once TEMPLATEPATH.'/inc/pagenation.php';
+
+add_filter('newsletter_enqueue_style', '__return_false');
 
 
 /*
