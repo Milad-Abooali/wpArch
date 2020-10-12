@@ -28,7 +28,7 @@ get_header();
         </div>
       </div>
       <!-- Posts -->
-      
+      <?php include_once TEMPLATEPATH.'/inc/posts-cat.php'; ?>
       <!-- Sidebar -->
       <div class="col-md-4 hidden-xs" id="leftblocks" >
         <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
