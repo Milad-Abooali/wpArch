@@ -124,8 +124,38 @@ function cb_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Main Sidebar', 'cb' ),
         'id' => 'sidebar-1',
-        'description' => __( 'The main sidebar appears on the right on home and the front page template', 'wpb' ),
+        'description' => __( 'The main sidebar appears on the right on home and the front page template', 'cb' ),
         'before_widget' => '<aside id="%1$s" class="leftblockss widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h5 class="widget-title">',
+        'after_title' => '</h5>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Footer Right', 'cb' ),
+        'id' => 'sidebar-2',
+        'description' => __( 'The widgets appears on the footer right on all pages ', 'cb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h5 class="widget-title">',
+        'after_title' => '</h5>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Footer Center', 'cb' ),
+        'id' => 'sidebar-3',
+        'description' => __( 'The widgets appears on the footer right on all pages ', 'cb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h5 class="widget-title">',
+        'after_title' => '</h5>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Footer Left', 'cb' ),
+        'id' => 'sidebar-4',
+        'description' => __( 'The widgets appears on the footer right on all pages ', 'cb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h5 class="widget-title">',
         'after_title' => '</h5>',
