@@ -10,7 +10,8 @@
  /*
  * Codebox SEO
  **/
-define('CB_Description', (get_post_meta(get_the_ID(), '_cb_seo', true)['CB_Description']) ?? get_the_excerpt());
+$desc = limit_word(strip_tags(category_description()),70);
+define('CB_Description', $desc);
 
 get_header();
 ?>
