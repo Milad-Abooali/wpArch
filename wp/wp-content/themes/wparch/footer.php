@@ -40,16 +40,13 @@
           <div class="col-md-6">
             <section id="about_footer">
               <link href="https://www.arch.ir/" itemprop="url" />
-              <strong><span itemprop="name">تماس با گروه معماران آرل</span></strong>
+              <strong><span itemprop="name">ارتباط با ما</span></strong>
               <div itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
-                <span itemprop="streetAddress"><a href="https://www.google.com/maps/@35.8121233,51.4494243,21z" itemprop="url" target="_blank" title="آدرس شرکت آرل"><span style="
-                color: #fa9b1d;
-                "><strong>ما اینجا هستیم</strong></span></a> : تهران ،&nbsp;<span itemprop="streetAddress">نیاوران، سه راه یاسر،ساختمان آوا 2،<br />
-                پلاک 250، طبقه 3، واحد 34</span></span>
+                <span itemprop="streetAddress">
+تهران؛ بلوار فردوس شرق، حدفاصل خیابان عقیل و خیابان حسن آباد، پلاک 361، واحد 10
+                </span>
               </div>
-              <strong>تلفن&nbsp; :&nbsp; </strong>۶-۲۲۹۰۱۹۰۵-۰۲۱&nbsp;<br />
-              <strong>فکس</strong> :&nbsp; &nbsp; ۲۲۹۰۱۹۰۷-۰۲۱<br />
-              <strong>ایمیل</strong>: info@arch.ir<br />
+              تلفن: <strong> ٤٤٩٧٨٥٤٧-۰۲۱ </strong> | ایمیل: <strong>info@arch.ir</strong>
             </section>
           </div>
         </div>
@@ -57,8 +54,8 @@
     </div>
   </div>
 </div>
-<div class="container-fluid bgblack" style="height: 20px;">
-
+<div class="container-fluid bgblack text-left">
+  <small>Site design by <a href="//codebox.ir" title="کدباکس | طراحی وب"> Codebox.ir</a></small>
 </div>
 <?php wp_footer(); ?>
 </body></html>

@@ -18,7 +18,7 @@
       </div>
       <div class="col-md-2 col-sm-2 col-xs-12 phonenum">
         <p>
-          <strong> ۰۲۱-۲۲۹۲۱۹۲۵-۶ </strong>
+          <strong> ٤٤٩٧٨٥٤٧-۰۲۱ </strong>
           <i class="fa fa-phone-square sm-mr-5 i-color"></i>
         </p>
       </div>
