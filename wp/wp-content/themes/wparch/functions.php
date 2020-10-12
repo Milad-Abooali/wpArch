@@ -187,6 +187,29 @@ function limit_word($text, $limit) {
 }
 
 /*
+* Breadcrumb
+**/
+function get_breadcrumb() {
+    echo '<a href="'.home_url().'" rel="nofollow">'.bloginfo('name').'</a>';
+    if (is_category() || is_single()) {
+        echo "&nbsp;&nbsp<i class='fa fa-chevron-left i-color'></i>&nbsp;&nbsp;";
+        the_category(' &nbsp;/&nbsp; ');
+            if (is_single()) {
+                echo " &nbsp;&nbsp;<i class='fa fa-chevron-left i-color'></i>&nbsp;&nbsp; ";
+                the_title();
+            }
+    } elseif (is_page()) {
+        echo "&nbsp;&nbsp;<i class='fa fa-chevron-left i-color'></i>&nbsp;&nbsp;";
+        echo the_title();
+    } elseif (is_search()) {
+        echo "&nbsp;&nbsp;<i class='fa fa-chevron-left i-color'></i>&nbsp;&nbsp; نتایج جستجو . . . ";
+        echo '"<em>';
+        echo the_search_query();
+        echo '</em>"';
+    }
+}
+
+/*
 * Get the current archive link
 **/
 function get_current_archive_link( $paged = true ) {

@@ -1,22 +1,30 @@
 <div itemprop="articleBody" class="publish">
 	<div class="row">
 		<div class="col-md-8 col-md-push-4">
-			<h1 style="margin-bottom: 32px;"><a href="https://www.arel.ir/fa/News-View-8145.html"><strong>طراحی ساختمان آکادمی هنر : به همه ی گل ها اجازه دهید که شکوفه دهند و تمام هنرها را توسعه دهند.</strong></a></h1>
+			<h1 style="margin-bottom: 32px;">
+        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><strong><?php the_title(); ?></strong></a>
+      </h1>
 		</div>
 		<div class="col-md-4 col-md-pull-8">
-			<div class="datainserted">نویسنده : تحریریه معماری آرل</div>
-			<div class="datainserted">تاریخ : يکشنبه , ۱۳۹۸/۰۳/۱۲ ۱۰:۴۵</div>
+			<div class="datainserted">
+
+        <?php $author_id=$post->post_author; ?>
+        <img src="<?php the_author_meta( 'avatar' , $author_id ); ?> " width="140" height="140" class="avatar" alt="<?php echo the_author_meta( 'display_name' , $author_id ); ?>" />
+        <br>
+        <?php the_author_meta( 'user_nicename' , $author_id ); ?>
+      </div>
+			<div class="datainserted">
+        <?php echo get_the_date('c'); ?>
+       </div>
 		</div>
 	</div>
-	<div class="breadcrumb"> <span> شما اینجا هستید : </span>
-		<ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
-			<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.arel.ir/fa/News-Category-525.html"><span itemprop="name">معماری منظر</span></a>
-				<meta itemprop="position" content="1">
-			</li>
-			<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.arel.ir/fa/News-Category-660.html"><span itemprop="name">طراحی لنداسکیپ، حیاط و فضای سبز</span></a>
-				<meta itemprop="position" content="1">
-			</li>
-		</ol>
+	<div class="breadcrumb">
+    <?= get_breadcrumb(); ?>
 	</div>
-	<div id="publishnewsview" class="newscontent"></div>
+	<div class="text-ceneter">
+    <img alt="<?php the_title(); ?>" src="<?php the_post_thumbnail_url(null,'medium') ?>">
+  </div>
+	<div id="publishnewsview" class="newscontent">
+    <?php the_content(); ?>
+  </div>
 </div>
