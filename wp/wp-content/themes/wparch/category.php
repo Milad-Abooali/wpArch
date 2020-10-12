@@ -28,31 +28,7 @@ get_header();
         </div>
       </div>
       <!-- Posts -->
-      <div class="col-md-8" id="Posts">
-        <?php
-        if (have_posts() ) {
-            while (have_posts()) {
-                the_post();
-                ?>
-                <section itemprop="category" class="post-list">
-                  <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-
-                  <div class='publishpost' id="<?= the_ID() ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php the_post_thumbnail_url(null,'medium') ?>">
-                    <div style="text-align: left;"><?php the_category('|'); ?></div>
-                    <?php the_excerpt(); ?>
-                  </div>
-                  <div class="readmore">
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">ادامه</a>
-                  </div>
-                </section>
-                <?php
-            }
-        }
-        wp_reset_postdata();
-        pagenation_func();
-        ?>
-      </div>
+      
       <!-- Sidebar -->
       <div class="col-md-4 hidden-xs" id="leftblocks" >
         <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
