@@ -122,13 +122,13 @@ function wpb_custom_new_menu() {
 add_action( 'init', 'wpb_custom_new_menu' );
 function cb_widgets_init() {
     register_sidebar( array(
-        'name' => __( 'Main Sidebar', 'wpb' ),
+        'name' => __( 'Main Sidebar', 'cb' ),
         'id' => 'sidebar-1',
-        'description' => __( 'The main sidebar appears on the right on each page except the front page template', 'wpb' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'description' => __( 'The main sidebar appears on the right on home and the front page template', 'wpb' ),
+        'before_widget' => '<aside id="%1$s" class="leftblockss widget %2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
+        'before_title' => '<h5 class="widget-title">',
+        'after_title' => '</h5>',
     ) );
 }
 add_action( 'widgets_init', 'cb_widgets_init' );

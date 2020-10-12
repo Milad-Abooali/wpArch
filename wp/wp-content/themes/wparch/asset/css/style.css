@@ -860,9 +860,8 @@ margin-bottom: 25px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.87);
 	padding-bottom: 5px
 }
-.leftblockss li {
-	display :block;
-}
+.leftblockss ul {margin-right: -40px;}
+.leftblockss li {display :block;}
 
 .rightblockss {
 	    padding-top: 25px;
