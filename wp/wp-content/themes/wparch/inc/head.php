@@ -56,7 +56,7 @@
         <form method="get" action="<?= site_url() ?>" class="navbar-form navbar-left hidden-md cb-ltr" role="search" accept-charset="UTF-8">
           <div class="input-group col-md-12">
             <span class="input-group-btn">
-              <button class="form-control main-color i-color" type="submit">
+              <button class="form-control main-color  ibg-color" type="submit">
                 <i class="glyphicon glyphicon-search"></i>
               </button>
             </span>

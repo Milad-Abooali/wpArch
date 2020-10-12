@@ -1,5 +1,7 @@
 .main-color {background-color: #000;color: #fff;}
-.i-color {color: #FFC107;}
+.i-color {color: #ffa000;}
+.ibg-color {background-color: #ffa000;color: #eee;}
+.ibg-color:hover {color: #fff;opacity: 0.8}
 
 img {max-width: 100%}
 

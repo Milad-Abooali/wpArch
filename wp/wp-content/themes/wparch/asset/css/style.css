@@ -954,9 +954,7 @@ input {
 	width: 75%;
 	margin-left: 10px;
 }
-.widget_newsletterwidget .tnp-field-email * {
-	display: inline-block!important;
-}
+.widget_newsletterwidget .tnp-field-email * {display: inline-block!important;}
 .widget_newsletterwidget .tnp-field-email {
 	direction: ltr;
 	text-align: left;
@@ -965,6 +963,6 @@ input {
 	direction: rtl;
 	text-align: right;
 }
-.widget_newsletterwidget .tnp-field-list input.tnp-preference {
-	margin: 0 5px;
-}
+.widget_newsletterwidget .tnp-field-list input.tnp-preference {margin: 0 5px;}
+.widget_newsletterwidget .tnp-field-button {text-align: center;}
+.widget_newsletterwidget .tnp-field-button input {text-align: center;}

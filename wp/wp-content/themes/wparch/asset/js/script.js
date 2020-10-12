@@ -1,4 +1,8 @@
 $(document).ready(function (t) {
+
+    $('.widget_newsletterwidget .tnp-submit').addClass('ibg-color');
+
+
     var e, n, a;
     function o() {
         var t = $(window).scrollTop();

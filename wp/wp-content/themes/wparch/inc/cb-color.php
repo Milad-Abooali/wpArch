@@ -69,7 +69,27 @@ public static function register ( $wp_customize ) {
     array(
       'label'      => __( 'Icone Color', 'wpArch' ), //Admin-visible name of the control
       'settings'   => 'link_icolor', //Which setting to load and manipulate (serialized is okay)
-      'priority'   => 10, //Determines the order this control appears in for the specified section
+      'priority'   => 9, //Determines the order this control appears in for the specified section
+      'section'    => 'colors', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+    )
+  ) );
+
+  $wp_customize->add_setting( 'link_ibgcolor',
+    array(
+      'default'    => '#ffa000', //Default setting/value to save
+      'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
+      'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
+      'transport'  => 'refresh', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
+      'sanitize_callback'  => 'esc_attr', //sanitization (optional?)
+    )
+  );
+  $wp_customize->add_control( new WP_Customize_Color_Control(
+    $wp_customize, //Pass the $wp_customize object (required)
+    'wpArch_link_ibgcolor', //Set a unique ID for the control
+    array(
+      'label'      => __( 'Button Color', 'wpArch' ), //Admin-visible name of the control
+      'settings'   => 'link_ibgcolor', //Which setting to load and manipulate (serialized is okay)
+      'priority'   => 8, //Determines the order this control appears in for the specified section
       'section'    => 'colors', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
     )
   ) );
@@ -90,6 +110,7 @@ public static function header_output() {
 <?php self::generate_css('.main-color', 'color', 'link_textcolor'); ?>
 <?php self::generate_css('.main-color a', 'color', 'link_textcolor'); ?>
 <?php self::generate_css('.i-color', 'color', 'link_icolor'); ?>
+<?php self::generate_css('.ibg-color', 'color', 'link_ibgcolor'); ?>
 </style>
 <!--/Theme Customizer CSS-->
 <?php
