@@ -1,4 +1,9 @@
 $(document).ready(function (t) {
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
     var e, n, a;
     function o() {
         var t = $(window).scrollTop();

@@ -56,7 +56,7 @@ public static function register ( $wp_customize ) {
 
   $wp_customize->add_setting( 'link_icolor',
     array(
-      'default'    => '#fff', //Default setting/value to save
+      'default'    => '#ffa000', //Default setting/value to save
       'type'       => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
       'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
       'transport'  => 'refresh', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?

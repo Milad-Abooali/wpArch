@@ -16,10 +16,9 @@
           <a target="_blank" href="//telegram.com/@Dalanarchpars" title="Telegram"><img class="cb-ico cb-filter-grey" src="http://www.google.com/s2/favicons?domain=telegram.org" alt="Telegram"></a>
         </div>
       </div>
-      <div class="col-md-2 col-sm-2 col-xs-12 phonenum">
-        <p>
-          <strong> ٤٤٩٧٨٥٤٧-۰۲۱ </strong>
-          <i class="fa fa-phone-square sm-mr-5 i-color"></i>
+      <div class="col-md-2 col-sm-2 col-xs-12 phonenum cb-ltr sm-mt-5">
+        <p data-toggle="tooltip" data-placement="bottom" title="+98 912 735 7517">
+          <i class="fa fa-phone-square sm-mr-5 i-color"></i><small>Call</small>
         </p>
       </div>
       <div class="col-md-5 col-sm-5 pull-right text-right col-xs-12 text-center-xs other_link">
