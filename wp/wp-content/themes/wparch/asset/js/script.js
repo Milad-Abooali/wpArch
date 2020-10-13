@@ -1,8 +1,4 @@
 $(document).ready(function (t) {
-
-    $('.widget_newsletterwidget .tnp-submit').addClass('ibg-color');
-
-
     var e, n, a;
     function o() {
         var t = $(window).scrollTop();
@@ -140,6 +136,11 @@ $(document).ready(function (t) {
             });
         });
     });
+
+
+    $('.widget_newsletterwidget .tnp-submit').hide('fast');
+    $('.widget_newsletterwidget .tnp-field-button').html('<button class="tnp-submit form-control main-color ibg-color" type="submit"> ثبت اشتراک <i class="fa fa-rss sm-ml-10"></i> </button>');
+
 }),
     (function (t, e, i) {
         (t.yektanetAnalyticsObject = i),

@@ -110,7 +110,7 @@ public static function header_output() {
 <?php self::generate_css('.main-color', 'color', 'link_textcolor'); ?>
 <?php self::generate_css('.main-color a', 'color', 'link_textcolor'); ?>
 <?php self::generate_css('.i-color', 'color', 'link_icolor'); ?>
-<?php self::generate_css('.ibg-color', 'color', 'link_ibgcolor'); ?>
+<?php self::generate_css('.ibg-color', 'background-color', 'link_ibgcolor'); ?>
 </style>
 <!--/Theme Customizer CSS-->
 <?php
