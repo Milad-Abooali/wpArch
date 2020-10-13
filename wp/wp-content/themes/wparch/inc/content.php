@@ -27,4 +27,9 @@
 	<div id="publishnewsview" class="newscontent">
     <?php the_content(); ?>
   </div>
+	<hr>
+<div id="tags">
+	<h5> برچسب ها : </h5>
+	<?php the_tags( '<i class="fa fa-tag sm-ml-5"></i> ', ' <i class="fa fa-tag sm-ml-5 sm-mr-25"></i>', '<br />' ); ?>
 </div>
+<hr>
