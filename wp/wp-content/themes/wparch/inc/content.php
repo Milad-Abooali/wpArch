@@ -9,9 +9,9 @@
 			<div class="datainserted">
 
         <?php $author_id=$post->post_author; ?>
-        <img src="<?php the_author_meta( 'avatar' , $author_id ); ?> " width="140" height="140" class="avatar" alt="<?php echo the_author_meta( 'display_name' , $author_id ); ?>" />
+        <img src="<?php the_author_meta( 'avatar' , $author_id ); ?> " width="140" height="140" class="avatar" alt="Author" />
         <br>
-        <?php the_author_meta( 'user_nicename' , $author_id ); ?>
+        <?php echo the_author_meta( 'display_name' , $author_id ); ?>
       </div>
 			<div class="datainserted">
         <?php echo get_the_date('c'); ?>
