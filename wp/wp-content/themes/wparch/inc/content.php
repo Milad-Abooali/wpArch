@@ -5,21 +5,23 @@
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><strong><?php the_title(); ?></strong></a>
       </h1>
 		</div>
-		<div class="col-md-4 col-md-pull-8">
-			<div class="datainserted">
-
+		<?php if(!is_page()): ?>
+		<div class="col-md-1 col-md-pull-8 text-left">
+			<div class="datainserted text-center">
         <?php $author_id=$post->post_author; ?>
-        <img src="<?php the_author_meta( 'avatar' , $author_id ); ?> " width="140" height="140" class="avatar" alt="Author" />
+				<?php echo get_avatar(get_the_author_meta( 'email' , $author_id ),75); ?>
         <br>
         <?php echo the_author_meta( 'display_name' , $author_id ); ?>
       </div>
-			<div class="datainserted">
-        <?php echo get_the_date('c'); ?>
-       </div>
+
 		</div>
+	<?php endif; ?>
 	</div>
 	<div class="breadcrumb">
     <?= get_breadcrumb(); ?>
+		<div class="datainserted pull-left">
+			<?php echo get_the_date('c'); ?><br>
+		</div>
 	</div>
 	<div class="text-ceneter">
     <img alt="<?php the_title(); ?>" src="<?php the_post_thumbnail_url(null,'medium') ?>">
